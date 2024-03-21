@@ -3,23 +3,30 @@ const http = require("http");
 
 const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, "utf-8");
 
+const templateOverview = fs.readFileSync(`${__dirname}/templates/template-overview.html`, "utf-8");
+
 // Create an HTTP server
 const server = http.createServer((req, res) => {
   // Get the requested URL path
   const pathName = req.url;
 
-  // Check the path and respond accordingly
+  // Overview page
   if (pathName === "/" || pathName === "/overview") {
-    // If the path is "/" or "/overview", send a response for the Overview page
-    res.end("Welcome to Overview page");
+    res.writeHead(200, { 'Content-type': "text/html" })
+    res.end(templateOverview);
+
+    // Product page
   } else if (pathName === "/product") {
-    // If the path is "/product", send a response for the Product page
     res.end("Welcome to Product page");
+
+    // API page
   } else if (pathName === "/api") {
     res.writeHead(200, { "Content-Type": "application/json" });
     res.end(data);
-  } else {
+
     // If the path doesn't match any of the above, return a 404 error
+
+  } else {
     res.writeHead(404, {
       "Content-Type": "text/html",
       "my-own-header": "papi header",
