@@ -10,6 +10,7 @@ const parsedData = JSON.parse(data);
 // Read templates synchronously
 const templateOverview = fs.readFileSync(`${__dirname}/templates/template-overview.html`, "utf-8");
 const templateCard = fs.readFileSync(`${__dirname}/templates/template-card.html`, "utf-8");
+const templateProduct = fs.readFileSync(`${__dirname}/templates/product.html`, "utf-8");
 
 // Function to replace placeholders in template with product data
 const replaceTemplate = (template, product) => {
@@ -28,11 +29,11 @@ const replaceTemplate = (template, product) => {
 
 // Create an HTTP server
 const server = http.createServer((req, res) => {
-  // Get the requested URL path
-  const pathName = req.url;
+  // Get the requested URL path and query params
+  const { pathname, searchParams } = new URL(req.url, `http://${req.headers.host}`);
 
   // Overview page
-  if (pathName === "/" || pathName === "/overview") {
+  if (pathname === "/" || pathname === "/overview") {
     res.writeHead(200, { 'Content-type': "text/html" });
 
     // Create HTML for each product card
@@ -43,11 +44,19 @@ const server = http.createServer((req, res) => {
     res.end(output);
 
     // Product page
-  } else if (pathName === "/product") {
-    res.end("Welcome to Product page");
+  } else if (pathname === "/product") {
+    res.writeHead(200, { 'Content-type': "text/html" });
+
+    // Get the query param 'id' from the URL
+    const productId = searchParams.get('id')
+
+    // Replace the Product HTML file with the selected product's data
+    const output = replaceTemplate(templateProduct, parsedData[productId])
+
+    res.end(output)
 
     // API page
-  } else if (pathName === "/api") {
+  } else if (pathname === "/api") {
     // Respond with JSON data
     res.writeHead(200, { "Content-Type": "application/json" });
     res.end(data);
