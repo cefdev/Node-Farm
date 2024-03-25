@@ -1,0 +1,22 @@
+{
+  "name": "node-farm",
+  "version": "1.0.0",
+  "description": "Learning node.js by building a farm app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cefdev/Node-Farm.git"
+  },
+  "author": "Mounssif Koumila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cefdev/Node-Farm/issues"
+  },
+  "homepage": "https://github.com/cefdev/Node-Farm#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
