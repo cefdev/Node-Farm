@@ -53,5 +53,115 @@
     "price": "2.00",
     "organic": false,
     "description": "Also known as maize, corn is one of the most popular cereal grains in the world. Popcorn and sweet corn are commonly eaten varieties, but refined corn products are also widely consumed, frequently as ingredients in foods. These include tortillas, tortilla chips, polenta, cornmeal, corn flour, corn syrup, and corn oil. Whole-grain corn is as healthy as any cereal grain, rich in fiber and many vitamins, minerals, and antioxidants."
+  },
+  {
+    "id": 5,
+    "productName": "Crisp Celery",
+    "image": "🥬",
+    "from": "USA",
+    "nutrients": "Vitamin K, Folate",
+    "quantity": "1 bunch",
+    "price": "$1.49",
+    "organic": true,
+    "description": "Celery adds a satisfying crunch to salads, soups, and snacks. It's also delicious when paired with peanut butter or hummus."
+  },
+  {
+    "id": 6,
+    "productName": "Plump Blueberries",
+    "image": "🫐",
+    "from": "Canada",
+    "nutrients": "Antioxidants, Vitamin C",
+    "quantity": "300g",
+    "price": "$4.50",
+    "organic": false,
+    "description": "Blueberries are small but mighty, packed with antioxidants and bursting with flavor. Enjoy them fresh, sprinkled over yogurt, or baked into muffins and pies."
+  },
+  {
+    "id": 7,
+    "productName": "Sweet Pineapple",
+    "image": "🍍",
+    "from": "Costa Rica",
+    "nutrients": "Vitamin C, Manganese",
+    "quantity": "1 🍍",
+    "price": "$3.99",
+    "organic": false,
+    "description": "Pineapple is a tropical fruit known for its juicy sweetness. Enjoy it fresh, grilled, or blended into smoothies and cocktails."
+  },
+  {
+    "id": 8,
+    "productName": "Crisp Red Apples",
+    "image": "🍎",
+    "from": "Canada",
+    "nutrients": "Fiber, Vitamin C",
+    "quantity": "6 🍎",
+    "price": "$3.50",
+    "organic": false,
+    "description": "With a satisfying crunch and a sweet taste, red apples are a classic favorite. Enjoy them on their own or sliced up with peanut butter for a tasty snack."
+  },
+  {
+    "id": 9,
+    "productName": "Strawberries",
+    "image": "🍓",
+    "from": "USA",
+    "nutrients": "Vitamin C, Folate",
+    "quantity": "500g",
+    "price": "$4.99",
+    "organic": true,
+    "description": "Sweet and tart, strawberries are bursting with flavor. They're perfect for snacking, adding to salads, or blending into smoothies."
+  },
+  {
+    "id": 10,
+    "productName": "Zesty Lemons",
+    "image": "🍋",
+    "from": "Italy",
+    "nutrients": "Vitamin C, Potassium",
+    "quantity": "8 🍋",
+    "price": "$2.99",
+    "organic": true,
+    "description": "Lemons add a refreshing citrus flavor to dishes and beverages. Use them to make lemonade, dress salads, or flavor seafood and poultry."
+  },
+  {
+    "id": 11,
+    "productName": "Ripe Mangoes",
+    "image": "🥭",
+    "from": "Mexico",
+    "nutrients": "Vitamin A, Vitamin C",
+    "quantity": "3 🥭",
+    "price": "$5.99",
+    "organic": false,
+    "description": "Mangoes are deliciously sweet and juicy, with a tropical flavor profile. Enjoy them fresh, sliced into salads, or blended into smoothies."
+  },
+  {
+    "id": 12,
+    "productName": "Crunchy Carrots",
+    "image": "🥕",
+    "from": "USA",
+    "nutrients": "Beta-carotene, Vitamin K",
+    "quantity": "1 kg",
+    "price": "$2.00",
+    "organic": true,
+    "description": "Carrots are versatile root vegetables that can be enjoyed raw as a snack, sliced into salads, or cooked in soups and stews."
+  },
+  {
+    "id": 13,
+    "productName": "Ripe Bananas",
+    "image": "🍌",
+    "from": "Ecuador",
+    "nutrients": "Potassium, Vitamin B6",
+    "quantity": "6 🍌",
+    "price": "$2.99",
+    "organic": true,
+    "description": "Bananas are a convenient and nutritious snack, perfect for on-the-go enjoyment. They're also great for adding natural sweetness to smoothies and baked goods."
+  },
+  {
+    "id": 14,
+    "productName": "Vibrant Bell Peppers",
+    "image": "🫑",
+    "from": "Spain",
+    "nutrients": "Vitamin C, Vitamin A",
+    "quantity": "3 🫑",
+    "price": "$3.49",
+    "organic": false,
+    "description": "Bell peppers come in a variety of colors and add a pop of flavor and color to dishes. Enjoy them raw in salads, roasted in the oven, or sautéed in stir-fries."
   }
 ]
